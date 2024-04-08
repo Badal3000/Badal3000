@@ -1,0 +1,54 @@
+# to import random module
+import random
+# to create a range of random numbers between 1-10
+n = random.randrange(1,100)
+# to take a user input to enter a number
+guess = int(input("Enter any number: "))
+while n!= guess: # means if n is not equal to the input guess
+    # if guess is smaller than n
+    if guess < n:
+        print("Too low")
+
+        # to again ask for input
+        guess = int(input("Enter number again: "))
+    # if guess is greater than n
+    elif guess > n:
+        print("Too high!")
+        # to again ask for the user input
+        guess = int(input("Enter number again: "))
+    # if guess gets equals to n terminate the while loop
+    else:
+        break
+print("you guessed it right!!")
+
+output:
+Enter any number: 56
+Too low
+Enter number again: 665
+Too high!
+Enter number again: 67
+Too high!
+Enter number again: 92
+Too high!
+Enter number again: 1000
+Too high!
+Enter number again: 99
+Too high!
+Enter number again: 23
+Too low
+Enter number again: 50
+Too low
+Enter number again: 51
+Too low
+Enter number again: 55
+Too low
+Enter number again: 65
+Too high!
+Enter number again: 63
+Too high!
+Enter number again: 60
+Too high!
+Enter number again: 59
+Too high!
+Enter number again: 58
+you guessed it right!!
